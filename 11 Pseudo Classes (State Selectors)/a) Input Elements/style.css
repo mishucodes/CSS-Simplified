@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+h1{
+    font-size: 2em;
+}
+
+/* Input Elements: */
+input{
+    display: block;
+}
+
+/* setting styles based on a state */
+input:disabled{
+    background-color: pink;
+}
+
+/* trying multiple states at once */
+input:disabled:hover{
+    background-color: rgb(230, 149, 163);
+}
+input:disabled:active{
+    background-color: rgb(172, 100, 112);
+}
+
+/* difference between active & focus */
+#name:active{
+    background-color: skyblue;
+}
+#email:focus{
+    background-color: lightgreen;
+}

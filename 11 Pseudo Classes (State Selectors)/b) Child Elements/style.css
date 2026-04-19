@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+h1{
+    font-size: 2em;
+}
+
+
+
+/* First Child: */
+span:first-child{
+    /* color: lightgreen; */
+    /* A span that is also the first child of its parent */
+}
+span:first-of-type{
+    /* color: lightcoral; */
+    /* The first span child of an element */
+}
+
+/* nth Child: */
+span:nth-child(3){
+    /* speaks for itself */
+    /* color: lightskyblue; */
+}
+span:nth-child(even){
+    /* speaks for itself */
+    /* color: lightskyblue; */
+}
+span:nth-child(3n){
+    /* speaks for itself */
+    color: lightskyblue;
+}
