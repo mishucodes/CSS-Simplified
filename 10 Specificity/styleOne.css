@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+h1{
+    background-color: maroon;
+    /* overridden by styleTwo */
+}
+
+
+/* Note how an ID overrides everything even though the others come later: */
+p{
+    background-color: darkviolet !important;
+    /* important overrides everything */
+}
+#id-one{
+    background-color: darkblue;/
+    /* most specific of all selectors (but less than inline) */
+}
+p.class-one{
+    background-color: darkslateblue;
+    /* less than an ID, but more than a mere class */
+}
+.class-one{
+    background-color: blue;
+    /* less than a class+element, but more than an element */
+}
+p{
+    background-color: skyblue;
+    /* probably the least specific selector */
+}
+
+
+ol{
+    list-style-position: inside;
+}
