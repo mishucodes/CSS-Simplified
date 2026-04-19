@@ -1,0 +1,26 @@
+*{
+    /* Applies to every single element (including HTML & Body) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+html{
+    background-color: #333;
+    /* HTML covers the entire viewport (even outside the page) */
+}
+body{
+    color: #ccc;
+    /* Body covers all the content in the page */
+}
+
+#one{
+    background-color: maroon;
+    color: yellow;
+    /* BGC of the children is maroon, not because it's inherited. But because it's transparent by default */
+    /* Color of the children is yellow, due to inheritance */
+}
+h2{
+    color: initial;
+    /* Setting the colour of a child of #one to "initial" (meaning the browser/CSS default, not this page's default) */ 
+}
