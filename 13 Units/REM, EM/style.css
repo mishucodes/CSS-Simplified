@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+
+/* Starts Here: */
+#rem-1{
+    background-color: darkgreen;
+    font-size: 1rem; /* 1rem here is 25px (defined above) */
+}
+#rem-2{
+    background-color: darkolivegreen;
+    font-size: 2rem; /* 1rem here is 50px (defined above) */
+}
+
+#parent-em{
+    background-color: maroon;
+        #child-em, #grandchild-em{
+            font-size: 2em;
+        }
+}
+
