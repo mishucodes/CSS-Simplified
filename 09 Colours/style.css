@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+html{
+    background-color: #333;
+    padding: 0;
+}
+body{
+    color: #ccc;
+    padding: 0;
+}
+
+#css{
+    background-color: darkslategrey;
+}
+#rgb{
+    background-color: rgb(100, 100, 0);
+}
+#rgba{
+    background-color: rgba(215, 215, 152, 0.465);
+}
+#hex{
+    background-color: #526c8e;
+}
+#hexa{
+    background-color: #526c8e70;
+}
+#hex-shorthand{
+    background-color: #777;
+}
+#transparent{
+    background-color: transparent;
+}
+#hsl{
+    background-color: hsl(100, 50%, 30%);
+}
+#hsla{
+    background-color: hsla(350, 50%, 60%, 0.5);
+}
