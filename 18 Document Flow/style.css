@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: inherit;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+
+/* Block Elements: */
+#div-default{
+    background-color: maroon;
+}
+#div-parent{
+    background-color: darkslateblue;
+    width: 75vw;
+        #div-child{
+            background-color: darkblue;
+        }
+}
+#div-height{
+    background-color: maroon;
+    height: 100px;
+}
+
+/* Inline Elements: */
+#span-default{
+    background-color: darkolivegreen;
+}
+#span-height-width{
+    background-color: darkolivegreen;
+    width: 100vw;
+    height: 100px;
+}
+
+/* Inline-Block Elements: */
+#span-inline-block-1{
+    background-color: darkblue;
+    display: inline-block;
+    height: 100px;
+    width: 750px;
+}
+#span-inline-block-2{
+    background-color: darkgreen;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    vertical-align: top;
+    /* Latin text sits on the bottom. I made it sit on the top (Like Devanagari) */
+}
+#button-default{
+    background-color: pink;
+    width: 250px;
+    vertical-align: top;
+    /* Latin text sits on the bottom. I made it sit on the top (Like Devanagari) */
+}
+
+/* Other Display Properties: */
+#display-none{
+    background-color: maroon;
+    display: none;
+}
