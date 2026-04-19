@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 html{
     background-color: #333;
@@ -15,10 +15,22 @@ body{
 }
 
 #one{
+    border: 1px solid yellow;
+    margin: 10px;
+    padding: 10px;
+    /* Border, Margin, & Padding will not be inherited by children */
     background-color: maroon;
-    color: yellow;
     /* BGC of the children is maroon, not because it's inherited. But because it's transparent by default */
+    color: yellow;
     /* Color of the children is yellow, due to inheritance */
+    font-size: 5rem;
+    /*
+        If * sets a font-size, it applies directly to all elements (no inheritance involved).
+        If not, children inherit the parent's font-size (5rem).
+        Then browser defaults apply:
+            h1 has font-size: 2em; (2 × 5rem = 10rem)
+            h2 has font-size: 1.5em; (1.5 × 5rem = 7.5rem)
+    */
 }
 h2{
     color: initial;
