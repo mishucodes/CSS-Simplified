@@ -19,7 +19,7 @@ h1{
 
 /* First Child: */
 span:first-child{
-    /* color: lightgreen; */
+    /* color: lightcoral; */
     /* A span that is also the first child of its parent */
 }
 span:first-of-type{
@@ -30,13 +30,18 @@ span:first-of-type{
 /* nth Child: */
 span:nth-child(3){
     /* speaks for itself */
-    /* color: lightskyblue; */
+    /* color: lightcoral; */
 }
 span:nth-child(even){
     /* speaks for itself */
-    /* color: lightskyblue; */
+    /* color: lightcoral; */
 }
 span:nth-child(3n){
     /* speaks for itself */
-    color: lightskyblue;
+    /* color: lightcoral; */
+}
+
+/* nth Type: */
+span:nth-of-type(even){
+    color: lightcoral;
 }
