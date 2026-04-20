@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+
+/* Position: Static by Default. */
+#parent{
+    border: 1px solid white;
+    background-color: hsl(300, 50%, 50%, 0.25);
+    padding: 2rem;
+    font-size: 2rem;
+}
+.child{
+    border: 1px solid white;
+    font-size: 1.5rem;
+}
+
+/* Relative: Element moves from where it was originally supposed to be. Does not affect other elements. */
+.relative{
+    background-color: maroon;
+    position: relative;
+    /* top wins here: */
+    top: 10px;
+    bottom: 10px;
+    /* left wins here (bcz English is ltr): */
+    left: 10px;
+    right: 10px;
+}
+
+.absolute{
+    background-color: darkolivegreen;
+}
+.fixed{
+    background-color: darkslateblue;
+}
+.sticky{
+    background-color: darkslategray;
+}

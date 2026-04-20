@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+
+
+#parent{
+    height: 50vh;
+    border: 1px solid white;
+    background-color: hsl(300, 50%, 50%, 0.25);
+    padding: 2rem;
+    font-size: 2rem;
+
+}
+.child{
+    border: 1px solid white;
+    font-size: 1.5rem;
+}
+
+.relative{
+    background-color: maroon;
+}
+.absolute{
+    background-color: darkolivegreen;
+}
+.fixed{
+    background-color: darkslateblue;
+}
+
+
+/* Sticky: The element is right there where it was supposed to be. But other elements think it does not exist (so they take its place behind it).
+    Some Notes:
+        a) The absolute element will place itself relative to its nearest non-static parent (body, if none exists).
+        b) The elements stay block/inline/whatever. But their width & height becomes "fit".
+        c) When we define properties like top, bottom, etc, we mean a mix of "on the screen", &  "one the document". Meaning the element is positioned somewhere on the document, but we can't scroll past it. It sticks to the screen.
+        d) IMPORTANT: Sticky stays on the screen as long as the parent element stays on the screen.
+*/
+.sticky{
+    background-color: darkslategrey;
+    position: sticky;
+    top: 0;
+}
