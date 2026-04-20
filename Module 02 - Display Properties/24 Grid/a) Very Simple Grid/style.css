@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+html{
+    background-color: #333;
+}
+body{
+    color: #ccc;
+}
+
+
+/* Grid: */
+#container{
+    margin: 10px;
+    background-color: maroon;
+    display: grid;
+    grid-template-columns: 100px 200px 300px; /* We want 03 columns of these widths (respectively) */
+    grid-auto-columns: 75px 150px; /* The width of the rest of the columns (alternatively) */
+    grid-template-rows: 100px 200px; /* The heights of the first 02 rows (respectively) */
+    grid-auto-rows: 75px 150px; /* The height of the rest of the rows (alternatively) */
+    grid-auto-flow: row; /* What order do we want the grid to be filled in (TRY CHANGING THIS) */
+}
+
+.item{
+    border: 1px solid lightgreen;
+    background-color: darkolivegreen;
+    font-size: 2rem;
+}
