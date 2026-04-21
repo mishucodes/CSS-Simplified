@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+
+div{
+    height: 150px;
+    width: 150px;
+    opacity: 0.5;
+    /* When the width of an element & its parent is known, margin:auto centers the child element: */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#red{
+    background-color: salmon;
+    margin-bottom: -30px;
+}
+#blue{
+    background-color: slateblue;
+    margin-top: -30px;
+}
