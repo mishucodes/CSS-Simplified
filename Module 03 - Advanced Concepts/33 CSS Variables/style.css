@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+
+/* Global Variables ("root" is basically "html"): */
+:root{
+    --primary-text: #ccc;
+    --secondary-text: #aaa;
+    --tertiary-text: #999;
+}
+
+#section-one{
+    h1{
+        color: var(--primary-text);
+    }
+    h2{
+        color: var(--secondary-text);
+    }
+    p{
+        color: var(--tertiary-text);
+    }
+}
+
+
+/* Local Variables: */
+#section-two{
+    --primary-text: pink;
+    --secondary-text: lightcoral;
+    --tertiary-text: darkorange;
+        h1{
+            color: var(--primary-text);
+        }
+        h2{
+            color: var(--secondary-text);
+        }
+        p{
+            color: var(--tertiary-text);
+        }
+}
