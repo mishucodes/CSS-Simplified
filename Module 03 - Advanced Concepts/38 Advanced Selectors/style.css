@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+
+
+/* Selecting all Paragraphs that are direct descendants of DIV: */
+div > span{
+    background-color: maroon;
+}
+span{
+    background-color: darkgreen;
+}
+
+/* Selecting all sibling Paragraphs of h1 that come after it: */
+h1 ~ p{
+    background-color: darkslateblue;
+}
+
+/* Selecting the very next sibling Paragraph of h1: */
+h1 + p{
+    background-color: darkslategrey;
+}
+
+/* Selecting every Paragraph that DOES NOT have a class "secondary": */
+p:not(.primary):not(.secondary){
+    background-color: darkmagenta;
+}
+
+/* Selecting an Input whose type is email: */
+input[type=email]
+{
+    background-color: skyblue;
+}
