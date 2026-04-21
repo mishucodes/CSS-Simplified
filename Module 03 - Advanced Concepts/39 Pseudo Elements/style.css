@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+
+
+/* Selecting the first letter of Paragraph: It's like wrapping it in a span. */
+p::first-letter{
+    font-size: 1.5rem;
+}
+
+/* Selecting the first line of the Paragraph: */
+p::first-line{
+    background-color: maroon;
+}
+
+
+/* Adding Content Before & After: */
+#box{
+    background-color: darkolivegreen;
+    height: 250px;
+    width: 250px;
+}
+#box::before{
+    content: "This is a ";
+}
+#box::after{
+    content: " Goodbye!";
+    font-size: 125%;
+}
