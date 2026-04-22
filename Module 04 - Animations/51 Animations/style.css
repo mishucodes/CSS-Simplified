@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+
+
+div{
+    background-color: maroon;
+    height: 250px;
+    width: 250px;
+    font-size: 2rem;
+    /* name-of-animation, duration, transition, delay, fill-mode, repeat, animation-direction */
+    animation: my-animation 2s ease-in-out 250ms forwards infinite alternate;
+    animation-play-state: paused;
+}
+div:hover{
+    animation-play-state: running;
+}
+div:active{
+    animation-play-state: paused;
+}
+@keyframes my-animation{
+    0%{
+        /* blank means default state */
+    }
+    50%{
+        background-color: darkslateblue;
+    }
+    100%{
+        background-color: darkgreen;
+    }
+}
