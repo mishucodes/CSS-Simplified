@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    position: relative;
+    background-color: lightgreen;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+button:hover::after{
+    content: "loading";
+    text-wrap-mode: nowrap;
+    color: #ccc;
+    position: absolute;
+    bottom: calc(-1rem + -10px + -20px);
+    left: calc(10px);
+    animation: dance-around 3s linear 0s 1 forwards;
+}
+@keyframes dance-around {
+    25%{
+        content: "loading...";
+    }
+    50%{
+        content: "fetching...";
+    }
+    75%{
+        content: "almost there...";
+    }
+    to{
+        content: "Done!";
+    }
+}
