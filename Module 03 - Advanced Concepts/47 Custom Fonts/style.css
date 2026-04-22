@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@font-face {
+    font-family: gta;
+    src: url('./fonts/GTA-font-Pricedown.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+    font-family: cinzel;
+}
+
+h1{
+    font-family: gta;
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+p{
+    font-size: 2rem;
+}
