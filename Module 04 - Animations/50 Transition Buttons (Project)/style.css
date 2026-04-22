@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/* All Buttons: */
+button{
+    background-color: hsl(200, 100%, 70%);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* Button One: */
+#hide{
+    opacity: 0.75;
+    transition: opacity 300ms ease-in-out;
+}
+#hide:hover{
+    opacity: 1;
+}
+#hide:focus{
+    opacity: 0;
+}
+
+
+/* Button Two: */
+#change-colour{
+    transition: 250ms;
+}
+#change-colour:focus{
+    background-color: lightsalmon;
+}
