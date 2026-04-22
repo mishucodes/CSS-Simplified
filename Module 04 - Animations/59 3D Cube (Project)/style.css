@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+
+
+/* Making a Cube: */
+#cube{
+    transform-style: preserve-3d;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    /* local variable: */
+    --side-length: 250px;
+}
+#cube:hover{
+    animation: rotate 5s linear 0s infinite;
+}
+
+
+/* Defining the Animations: */
+@keyframes rotate {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+
+/* Defining Basics of Sides: */
+.side{
+    width: var(--side-length);
+    height: var(--side-length);
+    background-color: skyblue;
+    border: 2px solid black;
+    opacity: 0.5;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+/* Defining Each Individual Side: */
+#right{
+    transform: rotateY(90deg) translateZ(calc(var(--side-length) / 2));
+}
+#left{
+    transform: rotateY(-90deg) translateZ(calc(var(--side-length) / 2));
+}
+#top{
+    transform: rotateX(90deg) translateZ(calc(var(--side-length) / 2));
+}
+#bottom{
+    transform: rotateX(-90deg) translateZ(calc(var(--side-length) / 2));
+}
+#back{
+    transform: rotateY(180deg) translateZ(calc(var(--side-length) / 2));
+}
+#front{
+    transform: translateZ(calc(var(--side-length) / 2));
+}
