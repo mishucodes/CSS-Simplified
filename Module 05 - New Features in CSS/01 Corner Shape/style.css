@@ -1,0 +1,38 @@
+/* Video URL: https://youtu.be/AhBL2MYlQj0 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    background-color: maroon;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    corner-shape: superellipse(1);
+}
+
+
+/*
+    Types of Corner Shapes:
+        a) Round: Default.
+        b) Scoop: Round inwards (Looks like Gemini).
+        c) Bevel: A straight line (Octagon).
+        d) Square: Turns off border-radius.
+        e) Notch: Inverse of Square (plus).
+        f) Supellipse(): Takes a value from -Infinity to Infinity. From plus to square, respectively.
+*/
