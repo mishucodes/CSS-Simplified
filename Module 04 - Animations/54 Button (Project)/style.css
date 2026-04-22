@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #333;
+    color: #ccc;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* Declaring Animations: */
+button{
+    padding: 10px;
+    font-size: 1.25rem;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: blink 1s ease-in-out 0ms infinite alternate, pulse 1s ease-in-out 0ms infinite alternate;;
+    animation-play-state: paused;
+}
+
+/* Defining Animations: */
+@keyframes blink {
+    from{
+        /* initial */
+    }
+    to{
+        background-color: darkseagreen;
+    }
+}
+@keyframes pulse {
+    from{
+        /* initial */
+    }
+    to{
+        transform: scale(2);
+    }
+}
+
+/* Applying Animations: */
+button:hover{
+    animation-play-state: running;
+}
+
+
+/* Declaring, Defining, & Applying an Animation: */
+button:focus{
+    animation: fly-away 500ms ease-in 0s forwards;
+}
+@keyframes fly-away {
+    to{
+        transform: translate(500px, 500px) scale(2);
+    }
+}
